@@ -22,7 +22,7 @@ If you want to show something like the IP address or maybe password (that random
 Just as the name, this file is where you define all the variables that used in your terraform (if you use variables).
 
 #### `terraform.tfvars`
-This file is not mandatory, I simply use it to define all the values for each variables that I use. Basically, we can just hardcode everything in the `main.tf` or any other terraform files. But imagine if you have several terraform files such as `ec2.tf`,`vpc.tf`,`eks.tf`. Then I need to create it for several environemt (`development`, `staging`, `production`) where each values of its variables is different. So by using `terraform.tfvars`, instead of change every values on each files, you can just change it in this file instead.
+This file is not mandatory, I simply use it to define all the values for each variables that I use. Basically, we can just hardcode everything in the `main.tf` or any other terraform files. But imagine if you have several terraform files such as `ec2.tf`,`vpc.tf`,`eks.tf`. Then I need to create it for several environemt (`development`, `staging`, `production`) where each values of its variables is different. So by using `terraform.tfvars`, instead of changing every value on each file, you can just change it in this file instead.
 
 ## Usage
 ---
