@@ -9,7 +9,7 @@ resource "aws_vpn_gateway" "vgw" {
 
 resource "aws_vpn_connection" "sts" {
     vpn_gateway_id              = aws_vpn_gateway.vgw.id
-    customer_gateway_id         = data.aws_customer_gateway.cgw_sf.id
+    customer_gateway_id         = data.aws_customer_gateway.cgw.id
     type                        = "ipsec.1"
     static_routes_only          = true
     local_ipv4_network_cidr     = var.sts["local_ipv4_network_cidr"]
